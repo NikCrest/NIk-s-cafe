@@ -27,7 +27,7 @@ const Order = () => {
       }
     };
     fetchData();
-  }, []);
+  }, [authCtx.id]);
   let updatedData = [];
   for (const key in data) {
     updatedData.push({items:data[key].items,totalAmount:data[key].totalAmount});
