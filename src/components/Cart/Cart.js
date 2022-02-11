@@ -63,7 +63,7 @@ const Cart = () => {
             Order
           </button>
           <NavLink onClick={cancleHandler} to="/menu" className={classes.btn}>
-            Cancle
+            Cancel
           </NavLink>
         </div>
       )}

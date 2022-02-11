@@ -12,6 +12,7 @@ const Nav = () => {
   }
   const logoutHandler = ()=>{
     authCtx.logout();
+    context.clearCart();
   }
   return (
     <div className="fix">

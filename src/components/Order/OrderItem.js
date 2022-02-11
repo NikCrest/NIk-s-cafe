@@ -16,7 +16,7 @@ const OrderItem = (props) => {
               <center><span>x{ele.qnt}</span></center>
             </div>
             <div className={classes.price}>
-              <span >Total Price :{ele.price}$</span>
+              <span >Total Price :{ele.price * ele.qnt}$</span>
             </div>
             
           </div>
