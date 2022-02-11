@@ -1,0 +1,12 @@
+.main{
+	margin-top: 20px;
+    display: grid;
+    grid-column-gap: 50px;
+    grid-gap: 2rem;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    margin-left: 30x;
+    justify-content: center;
+  
+  
+}

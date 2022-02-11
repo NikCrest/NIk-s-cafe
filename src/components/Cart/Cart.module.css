@@ -1,0 +1,55 @@
+.cart {
+  max-width: 30rem;
+  background-color: #313131;
+  color: white;
+}
+.total {
+  padding: 4px;
+  border: 2px double black;
+  border-radius: 4px;
+  display: flex;
+  float: left;
+  color: black;
+  font-size: larger;
+  font-weight: bold;
+  margin: 8px;
+}
+.cart h2 {
+  font-size: 1.75rem;
+  margin: 0.5rem 0;
+  color: black;
+}
+
+.cart ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+hr {
+  border: 2px solid black;
+}
+.links{
+  display: flex;
+  justify-content: right;
+  padding: 5px;
+ 
+}
+.btn {
+  margin : 5px;
+  border: none;
+  padding: 8px;
+  outline: none;
+  color: #fff;
+  font-size: 20px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: normal;
+  background-color: rgb(82, 43, 43);
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  text-decoration: none;
+}
+.btn:hover{
+  background-color: rgb(156, 102, 102);
+}
