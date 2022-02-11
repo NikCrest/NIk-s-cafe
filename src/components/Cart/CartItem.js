@@ -26,8 +26,9 @@ const CartItem = (props) => {
         x <span>{props.item.qnt}</span>
       </div>
       <div className={classes.actions}>
+      <button onClick={removeHandler.bind(null,props.item.id)} >-</button>
       <button onClick={addHandler.bind(null,props.item)}>+</button>
-        <button onClick={removeHandler.bind(null,props.item.id)} >-</button>
+        
         
       </div>
     </div>
