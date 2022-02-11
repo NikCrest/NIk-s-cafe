@@ -16,9 +16,12 @@ function App() {
       <div className="App">
         <Layout>
           <Switch>
-            <Route path="/" exact>
+            {authCtx.isLoggedIn && <Route path="/" exact>
+              <Home />
+            </Route>}
+            {!authCtx.isLoggedIn && <Route path="/" exact>
               <AuthForm />
-            </Route>
+            </Route>}
            {authCtx.isLoggedIn &&  <Route path="/home" exact>
               <Home />
             </Route>}
@@ -31,9 +34,12 @@ function App() {
             {authCtx.isLoggedIn &&<Route path="/order">
               <Order />
             </Route>}
-            <Route path="*">
+            {authCtx.isLoggedIn && <Route path="*">
+              <Home />
+            </Route>}
+            {!authCtx.isLoggedIn && <Route path="*">
               <AuthForm />
-            </Route>
+            </Route>}
           </Switch>
         </Layout>
       </div>

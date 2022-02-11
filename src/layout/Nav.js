@@ -32,7 +32,7 @@ const Nav = () => {
           <Link to="/order">Orders</Link>
         </li>
         <li>
-          <Link onClick={logoutHandler} to="/auth">Logout</Link>
+          <Link onClick={logoutHandler} to="/">Logout</Link>
         </li>
       </ul>}
     </header>
