@@ -1,6 +1,6 @@
 import Layout from "./layout/Layout";
 import "./App.css";
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch,Redirect} from "react-router-dom";
 import Cart from "./components/Cart/Cart";
 import Menu from "./components/Menu/Menu";
 import Home from "./layout/Home";
@@ -35,10 +35,10 @@ function App() {
               <Order />
             </Route>}
             {authCtx.isLoggedIn && <Route path="*">
-              <Home />
+              <Redirect to="/home" />
             </Route>}
             {!authCtx.isLoggedIn && <Route path="*">
-              <AuthForm />
+            <Redirect to="/" />
             </Route>}
           </Switch>
         </Layout>
